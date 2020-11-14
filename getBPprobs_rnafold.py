@@ -14,7 +14,7 @@ def main():
 	argv = sys.argv[1:] #grabs all the arguments
 
 	def usage():
-		print('''python getBPprobs.py -i name_dp.ps -n seq_length > name.probs
+		print('''python getBPprobs.py -i name_dp.ps > name.probs
         Options:
         -h, --help
 
@@ -46,7 +46,6 @@ def main():
 		print("WARNING: Unused options", source)
 	################# END command line options code
 
-	#script to take two strings of dot bracket plots and print out their pearson correlation
 	if not os.path.isfile(inputName):
 		print(inputName, "does not exist")
 		sys.exit()

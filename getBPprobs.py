@@ -64,7 +64,6 @@ def main():
 		print("WARNING: Unused options", source)
 	################# END command line options code
 
-	#script to take two strings of dot bracket plots and print out their pearson correlation
 	infile = open(inputName, 'r')
 	allprobs = infile.read().splitlines()
 	probs = []
